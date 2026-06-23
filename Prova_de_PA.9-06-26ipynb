@@ -1,0 +1,268 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOQWu5BNKmbxBz5INLLsFKA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/marcoantoniobarbosacardoso-boop/U-Void/blob/main/Prova_de_PA.9-06-26ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "9AakbGVOFRNU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ca9c045a-d5aa-43f8-c38d-14af703f86f1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Questão 1:\n",
+        "\n",
+        "for i in range (0,21):\n",
+        "  print (i)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Questão 2:\n",
+        "\n",
+        "Número1 = int (input(\"Digite um número: \"))\n",
+        "Número2 = int (input(\"Digite um número: \"))\n",
+        "\n",
+        "Soma = Número1 + Número2\n",
+        "\n",
+        "print (f\"{Número1} + {Número2} é igual a {Soma}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AQLTXmYqLTd2",
+        "outputId": "04bbf71f-d3e5-4069-c9fe-3f8d48855842"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 10\n",
+            "Digite um número: 5\n",
+            "10 + 5 é igual a 15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Questão 3:\n",
+        "\n",
+        "número =  int (input(\"Digite um número: \"))\n",
+        "\n",
+        "for i in range (1, 11):\n",
+        "\n",
+        "  print (f\"{número} x {i} = {número * i}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "D4lbOWg1OO4V",
+        "outputId": "1ca5c88e-d303-4204-8cda-53af396aa612"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 7\n",
+            "7 x 1 = 7\n",
+            "7 x 2 = 14\n",
+            "7 x 3 = 21\n",
+            "7 x 4 = 28\n",
+            "7 x 5 = 35\n",
+            "7 x 6 = 42\n",
+            "7 x 7 = 49\n",
+            "7 x 8 = 56\n",
+            "7 x 9 = 63\n",
+            "7 x 10 = 70\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Questão 4:\n",
+        "\n",
+        "numero = int(input(\"Digite um número inteiro positivo: \"))\n",
+        "if numero < 0:\n",
+        "    print(\"Por favor, digite um número maior ou igual a zero.\")\n",
+        "else:\n",
+        "    fatorial = 1\n",
+        "    for i in range(1, numero + 1):\n",
+        "        fatorial *= i\n",
+        "    print(f\"Fatorial = {fatorial}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5XmaS8MyOufv",
+        "outputId": "ecb5f0fd-3fab-41c4-c381-e335a4541067"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro positivo: 7\n",
+            "Fatorial = 5040\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Número = 288\n",
+        ",00\n",
+        "\n",
+        "# Calculadora Simples:\n",
+        "\n",
+        "# O programa  receber dois números e irá realizar uma das 4 operações matemáticas.\n",
+        "\n",
+        "opção = \"\"\n",
+        "número_a = 0\n",
+        "número_b = 0\n",
+        "\n",
+        "print (\"------ MENU ------\")\n",
+        "print (\"\")\n",
+        "print (\"Opção 1: Depositar dinheiro\")\n",
+        "print (\"\")\n",
+        "print (\"Opção 2: Retirar dinheiro\")\n",
+        "print (\"\")\n",
+        "print (\"Opção 3: Sair\")\n",
+        "print (\"\")\n",
+        "print (\"======================\")\n",
+        "print (\"\")\n",
+        "\n",
+        "try:\n",
+        "\n",
+        "  while opção != 3:\n",
+        "    opção = int (input(\"Digite a opção desejada ou 3 para sair. \"))\n",
+        "    print (\"\")\n",
+        "\n",
+        "\n",
+        "    if opção == 1:\n",
+        "      número_a = float (input(\"Digite um número: \"))\n",
+        "      print (\"\")\n",
+        "      número_b = float (input(\"Digite um número: \"))\n",
+        "      print (\"\")\n",
+        "      print (f\"Seu novo saldo é {número_a + número_b} \")\n",
+        "      print (\"\")\n",
+        "\n",
+        "    elif opção == 2:\n",
+        "      número_a = float (input(\"Digite um número: \"))\n",
+        "      print (\"\")\n",
+        "      número_b = float (input(\"Digite um número: \"))\n",
+        "      print (\"\")\n",
+        "      print (f\"Seu novo saldo é: {número_a - número_b} \")\n",
+        "      print (\"\")\n",
+        "\n",
+        "except:\n",
+        "  print (\"Digite apenas número de 1 a 2.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4GzdAPHlSQnB",
+        "outputId": "8accfe38-b0ae-4694-c31e-dbeb03cf74ca"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "------ MENU ------\n",
+            "\n",
+            "Opção 1: Depositar dinheiro\n",
+            "\n",
+            "Opção 2: Retirar dinheiro\n",
+            "\n",
+            "Opção 3: Sair\n",
+            "\n",
+            "======================\n",
+            "\n",
+            "Digite a opção desejada ou 3 para sair. 1\n",
+            "\n",
+            "Digite um número: 288\n",
+            "\n",
+            "Digite um número: 76\n",
+            "\n",
+            "Seu novo saldo é 364.0 \n",
+            "\n",
+            "Digite a opção desejada ou 3 para sair. 3\n",
+            "\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
